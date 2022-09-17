@@ -5,7 +5,7 @@
 #  ___/ // /_/ // /_/ // /_ / /  / /  / /_/ // ,<  / /   #
 # /____// .___/ \____/ \__//_/  /_/   \____//_/|_|/_/    #
 #      /_/                                               #
-#   created to Eliott FLECHTNER & Sebastien KERBOURC'H   #
+#   created by Eliott FLECHTNER & Sebastien KERBOURC'H   #
 ##########################################################
 
 # Print the tag
@@ -23,7 +23,7 @@ import sys
 import spotipy.client as spotipy
 import spotipy as spot
 import os
-os.chdir('C:\\Users\\Utilisateur\\Documents\\BOOK PROGRAMMATION\\TOKIs\\SpotiToki')
+os.chdir('[path to bot here]')
 
 # Sleep interval
 interval = 1
@@ -40,7 +40,7 @@ def subprocess_call(*args, **kwargs):
     return retcode
 
 # Get the API authorization token
-token = spot.util.prompt_for_user_token('qrop', "user-read-currently-playing", client_id = '1983f39d05ac45ec9333140a25cff492', client_secret = '15ba2d0ed8624d83bbbd25d6448d969d', redirect_uri = 'http://localhost:8888/callback')
+token = spot.util.prompt_for_user_token('qrop', "user-read-currently-playing", client_id = 'client_id_here', client_secret = 'client_secret_here', redirect_uri = 'http://localhost:8888/callback')
 sp = spotipy.Spotify(token)
 
 # Get the type of the current playing track  
@@ -69,4 +69,3 @@ while track != None:
     # Refresh the program each given interval & get current playing track
     track = sp.current_user_playing_track()
     sleep(interval)
-
