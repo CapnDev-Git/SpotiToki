@@ -8,15 +8,7 @@
 #   created by Eliott FLECHTNER & Sebastien KERBOURC'H   #
 ##########################################################
 
-# Print the tag
-tag = "   _____                __   _  ______        __    _ \n  / ___/ ____   ____   / /_ (_)/_  __/____   / /__ (_)\n  \__ \ / __ \ / __ \ / __// /  / /  / __ \ / //_// / \n ___/ // /_/ // /_/ // /_ / /  / /  / /_/ // ,<  / /  \n/____// .___/ \____/ \__//_/  /_/   \____//_/|_|/_/   \n     /_/                                              \n"
-print('-' * 54)
-print('-' * 54)
-print(tag)
-print('-' * 54)
-print('-' * 54)
-
-# Import librairies& modules
+# Import librairies & modules
 from time import sleep
 import subprocess
 import sys
